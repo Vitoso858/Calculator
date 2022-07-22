@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="tela"><p></p></div>
+      <div class="teclado">
+        <div class="botoes">
+          <button onclick="deleteAll()">C</button>
+
+          <button onclick="deleteOne()"><</button>
+          <button value="/" onclick="inserirNum(this)" disabled>/</button>
+          <button
+            value="*"
+            onclick="inserirNum(this)"
+            class="operador"
+            disabled
+          >
+            x
+          </button>
+        </div>
+
+        <div class="botoes">
+          <button value="1" onclick="inserirNum(this)">1</button>
+          <button value="2" onclick="inserirNum(this)">2</button>
+          <button value="3" onclick="inserirNum(this)">3</button>
+          <button
+            value="+"
+            onclick="inserirNum(this)"
+            class="operador"
+            disabled
+          >
+            +
+          </button>
+        </div>
+        <div class="botoes">
+          <button value="4" onclick="inserirNum(this)">4</button>
+          <button value="5" onclick="inserirNum(this)">5</button>
+          <button value="6" onclick="inserirNum(this)">6</button>
+          <button
+            value="-"
+            onclick="inserirNum(this)"
+            class="operador"
+            disabled
+          >
+            -
+          </button>
+        </div>
+
+        <div class="botoes">
+          <button value="7" onclick="inserirNum(this)">7</button>
+          <button value="8" onclick="inserirNum(this)">8</button>
+          <button
+            value="9"
+            onclick="inserirNum(this)"
+            class="operador"
+            disabled
+          >
+            9
+          </button>
+          <button style="width: 6em; height: 8em" onclick="calcular()">
+            =
+          </button>
+        </div>
+
+        <div class="botoes line-finish">
+          <button style="width: 11.5em" value="0" onclick="inserirNum(this)">
+            0
+          </button>
+          <button style="width: 5.7em" value="." onclick="inserirNum(this)">
+            .
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
