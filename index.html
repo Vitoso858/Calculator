@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,70 +18,38 @@
       <div class="tela"><p></p></div>
       <div class="teclado">
         <div class="botoes">
-          <button onclick="deleteAll()">C</button>
+          <button id="deleteall"">C</button>
+          <button id="deleteone""><</button>
 
-          <button onclick="deleteOne()"><</button>
-          <button value="/" onclick="inserirNum(this)" disabled>/</button>
-          <button
-            value="*"
-            onclick="inserirNum(this)"
-            class="operador"
-            disabled
-          >
-            x
-          </button>
+          <button class="inserir operador" value="/" disabled>/</button>
+          <button class="inserir operador" value="*" disabled>x</button>
         </div>
 
         <div class="botoes">
-          <button value="1" onclick="inserirNum(this)">1</button>
-          <button value="2" onclick="inserirNum(this)">2</button>
-          <button value="3" onclick="inserirNum(this)">3</button>
-          <button
-            value="+"
-            onclick="inserirNum(this)"
-            class="operador"
-            disabled
-          >
-            +
-          </button>
+          <button class="inserir" value="1">1</button>
+          <button class="inserir" value="2">2</button>
+          <button class="inserir" value="3">3</button>
+          <button class="inserir operador" value="+" disabled>+</button>
         </div>
         <div class="botoes">
-          <button value="4" onclick="inserirNum(this)">4</button>
-          <button value="5" onclick="inserirNum(this)">5</button>
-          <button value="6" onclick="inserirNum(this)">6</button>
-          <button
-            value="-"
-            onclick="inserirNum(this)"
-            class="operador"
-            disabled
-          >
-            -
-          </button>
+          <button class="inserir" value="4">4</button>
+          <button class="inserir" value="5">5</button>
+          <button class="inserir" value="6">6</button>
+          <button class="inserir operador" value="-" disabled>-</button>
         </div>
 
         <div class="botoes">
-          <button value="7" onclick="inserirNum(this)">7</button>
-          <button value="8" onclick="inserirNum(this)">8</button>
-          <button
-            value="9"
-            onclick="inserirNum(this)"
-            class="operador"
-            disabled
-          >
-            9
-          </button>
-          <button style="width: 6em; height: 8em" onclick="calcular()">
+          <button class="inserir" value="7">7</button>
+          <button class="inserir" value="8">8</button>
+          <button class="inserir" value="9">9</button>
+          <button style="width: 6em; height: 8em" id="calcular">
             =
           </button>
         </div>
 
         <div class="botoes line-finish">
-          <button style="width: 11.5em" value="0" onclick="inserirNum(this)">
-            0
-          </button>
-          <button style="width: 5.7em" value="." onclick="inserirNum(this)">
-            .
-          </button>
+          <button style="width: 11.5em" value="0" class="inserir">0</button>
+          <button style="width: 5.7em" value="." class="inserir">.</button>
         </div>
       </div>
     </div>
